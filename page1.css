@@ -1,0 +1,139 @@
+body{
+    background: #eee;
+}
+
+#side_nav{
+    background:#000;
+    min-width:250px;
+    max-width:250px;
+    transition: all 0.3s;
+    position: fixed;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.content{
+    min-height:100vh;
+    width:100%;
+}
+
+hr.h-colors{
+    background: #eee;
+    height: 3px;
+}
+
+hr.h-color{
+    background: #eee;
+}
+
+.sidebar li.active{
+    color: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active button {
+    color: white;
+    background-color: #000;
+}
+
+.sidebar li.active button:hover{
+background-color: #eee;
+color: #000;
+}
+
+.sidebar li.active .nav-link:hover{
+    background-color: #eee;
+    color: #000;
+    }
+
+    .sidebar li.active .nav-item:hover{
+        background-color: #eee;
+        color: #000;
+        }
+
+.sidebar li button{
+    width:100%;
+    border-radius: 3px;
+}
+
+/* ========== */
+
+ 
+
+.nav-link {
+    color: white;
+    background-color: #000;
+    border-radius: 3px;
+    width:100%;
+}
+
+.nav-link:hover{
+background-color: #524e4e44;
+color: #eee;
+}
+
+
+
+.Dashboard-content{
+    position: fixed;
+    margin-top: 59px;
+    margin-left:252px;
+    aspect-ratio: 1/1;
+
+}
+
+iframe{
+    width: 340%;
+}
+
+/* .sidebar .dropdown-item:hover{
+   background-color: white;
+   color: #000;
+}  */
+
+@media(max-width:767px){
+
+    .content{
+        /* background: #000; */
+        border: 1px solid white;
+        position: fixed;
+        margin-left: -250px;
+        width: 100%;
+        z-index: 1;
+        border: none;
+    }
+
+    .Dashboard-content{
+        position: fixed;
+        margin-top: 59px;
+        margin-left:13.5%;
+        margin-right: 100px;
+    }
+     
+    #side_nav{
+        margin-left:-250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index:1;
+    }
+
+    #side_nav.active{
+        margin-top:50px ;
+        margin-left: 0;
+        max-width:280px;
+    }
+
+    iframe{
+        width: 240%;
+    }
+    
+}
+
+.navbar{
+    background: #000;
+    border: 1px solid white;
+    margin-left: 250px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
